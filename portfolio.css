@@ -10,3 +10,11 @@ body {
     border-radius: 100%;
     width: 10rem;
 }
+
+#header_name {
+    text-align: center;
+}
+
+.nav-link.active {
+    font-weight: 700;
+}
