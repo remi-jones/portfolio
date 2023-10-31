@@ -1,3 +1,10 @@
+body {
+    background-color: #f8f9fa;
+    /* Light gray background */
+    color: #333;
+    /* Darker text for better contrast */
+}
+
 header.masthead {
     position: relative;
     background-color: #343a40;
@@ -46,6 +53,7 @@ nav ul ul {
 nav ul li:hover {
     background-color: #343a40;
 }
+
 nav ul li:hover a {
     color: #fff;
 }
@@ -89,4 +97,64 @@ footer .row {
 .nav-link.active:hover {
     font-weight: bold;
     background-color: #343a40;
+}
+
+
+/*********** competences **************/
+
+header.header_competences {
+    padding: 4rem 1rem;
+    background: #e9ecef;
+    /* Light gray background */
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    /* Subtle gradient effect */
+}
+
+.header_competences h1 {
+    color: #212529;
+    /* Bootstrap's default color for dark gray */
+    margin-bottom: 1rem;
+}
+
+/* Badge Styles */
+.badge {
+    font-weight: bold;
+}
+
+.bg-success {
+    background-color: #6c757d !important;
+}
+
+.bg-primary {
+    background-color: #adb5bd !important;
+
+}
+
+.bg-secondary {
+    background-color: #495057 !important;
+}
+
+.bg-info {
+    background-color: #ced4da !important;
+    color: black;
+}
+
+.bg-warning {
+    background-color: #6c757d !important;
+}
+
+.bg-danger {
+    background-color: #343a40 !important;
+}
+
+.bg-dark {
+    background-color: #212529 !important;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    header.header_competences {
+        text-align: center;
+        /* Center text for mobile */
+    }
 }
