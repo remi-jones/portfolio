@@ -23,33 +23,53 @@
     <nav class="navbar navbar-light bg-light static-top">
         <div class="container">
             <ul>
-                <li><a class="nav-link active" href="index.html">Accueil</a></li>
-                <li><a class="nav-link" href="#">Projets</a>
+                <li class="nav-link active"><a href="#">Accueil</a></li>
+                <li class="nav-link"><a href="#">Projets</a>
                     <ul>
-                        <li><a class="nav-link" href="project1.html">Visualiseur d'algorithme</a></li>
-                        <li><a class="nav-link" href="project2.html">Connect4</a></li>
-                        <li><a class="nav-link" href="project3.html">Minutrie</a></li>
+                        <li class="nav-link"><a href="project1.html">Visualiseur d'algorithme</a></li>
+                        <li class="nav-link"><a href="project2.html">Connect4</a></li>
+                        <li class="nav-link"><a href="project3.html">Minutrie</a></li>
                     </ul>
                 </li>
-                <li><a class="nav-link" href="competences.html">Compétences</a></li>
-                <li><a class="nav-link" href="realisations.html">Réalisations et récompenses</a></li>
+                <li class="nav-link"><a href="competences.html">Compétences</a></li>
+                <li class="nav-link"><a href="realisations.html">Réalisations et récompenses</a></li>
             </ul>
         </div>
     </nav>
     <!-- Masthead-->
     <header class="masthead">
         <div class="container position-relative">
-            <div class="row justify-content-center">
-                <div class="col-xl-6">
-                    <div class="text-center text-white">
+            <div class="row align-items-center">
+                <div class="col-lg-4 object-center">
+                    <img class="mx-auto d-block img-fluid self_portrait" src="media/img/me.jfif" alt="">
+                </div>
+                <div class="col-lg-4 text-center text-white">
                         <!-- Page heading-->
                         <h1>Remi Jones</h1>
                         <h3>Portfolio professionnel</h3>
-                    </div>
+                </div>
+                <div class="col-lg-4 text-white text-center">
+                    <p>
+                        <em>
+                            "Codez l'avenir avec créativité et passion."
+                        </em>
+                    </p>
                 </div>
             </div>
         </div>
     </header>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Profil</h1>
+            <p class="lead">Étudiant de 4e année en informatique appliquée à l'Université de Moncton, je possède une solide expérience dans l'analyse et la modélisation de données.</p>
+            <hr class="my-4">
+            <p>Ma formation en régime coopératif m'a permis de développer une approche systématique et disciplinée du développement de logiciels, ancrée dans les méthodologies Agile. Adaptatif et débrouillard, je suis prêt à relever de nouveaux défis et à contribuer avec dynamisme à la réussite de votre entreprise.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#contacter" role="button">Me contacter</a>
+            </p>
+        </div>
+
+    </div>
     <!-- Icons Grid-->
     <section class="features-icons bg-light text-center">
         <div class="container">
@@ -93,7 +113,7 @@
         <div class="container position-relative">
             <div class="row justify-content-center">
                 <div class="col-xl-6">
-                    <h2 class="mb-4">Prêt à m'embaucher? Veuillez me contacter!</h2>
+                    <h2 id="contacter" class="mb-4">Prêt à m'embaucher? Veuillez me contacter!</h2>
                     <p>
                         <a href="mailto:erj7171@umoncton.ca" class="btn btn-primary" role="button">
                             erj7171@umoncton.ca
@@ -101,24 +121,22 @@
                     </p>
                     <p>
                         <!-- LinkedIn Button -->
-                        <a href="https://www.linkedin.com/in/remi-jones-a7663b212/" 
-                            role="button" target="_blank">
+                        <a href="https://www.linkedin.com/in/remi-jones-a7663b212/" role="button" target="_blank">
                             <img class="icon" src="media/img/linkedin.png" alt="linkedin_logo">
                         </a>
                         <!-- GitHub Button -->
-                        <a href="https://github.com/remi-jones" 
-                            role="button" target="_blank">
+                        <a href="https://github.com/remi-jones" role="button" target="_blank">
                             <img class="icon" src="media/img/github.png" alt="linkedin_logo">
                         </a>
                     </p>
                     <p>Alternativement, entrez votre adresse courielle avec un court message et je vous répondrai dès
                         que possible.</p>
                     <form action="#"></form>
-                        <div class="mb-3">
-                            <label for="emailInput" class="form-label">Adresse électronique</label>
-                            <input type="email" class="form-control" id="emailInput" placeholder="nom@example.com">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    <div class="mb-3">
+                        <label for="emailInput" class="form-label">Adresse électronique</label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="nom@example.com">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
                     </form>
                 </div>
             </div>
@@ -129,7 +147,8 @@
         <div class="container p-4">
             <div class="row">
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-center">
-                    <p class="text-muted small mb-4 mb-lg-0">Ce portfolio est une représentation de mes compétences et travaux. Merci de votre visite. <br>
+                    <p class="text-muted small mb-4 mb-lg-0">Ce portfolio est une représentation de mes compétences et
+                        travaux. Merci de votre visite. <br>
                         &copy; 2023 Rémi Jones.
                     </p>
                 </div>
@@ -137,7 +156,7 @@
             </div>
         </div>
     </footer>
-    
+
 
 </body>
 
