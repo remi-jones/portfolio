@@ -2,77 +2,180 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- css -->
-    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Remi Jones - Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="media/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="media/img/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="styles.css" rel="stylesheet" />
+    <link href="portfolio.css" rel="stylesheet" />
 </head>
 
 <body>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script> -->
-    <div class="container">
-        <header class="row d-flex align-items-center">
-            <!-- <header> -->
-            <div class="col-sm-4">
-                <div class="content">
-                    <!-- logo -->
-                    <img id="self_portrait" src="media/img/me.jfif" alt="portrait">
+    <!-- Navigation-->
+    <nav class="navbar navbar-light bg-light static-top">
+        <div class="container">
+            <ul>
+                <li><a class="nav-link active" href="index.html">Accueil</a></li>
+                <li><a class="nav-link" href="#">Projets</a>
+                    <ul>
+                        <li><a class="nav-link" href="project1.html">Visualiseur d'algorithme</a></li>
+                        <li><a class="nav-link" href="project2.html">Connect4</a></li>
+                        <li><a class="nav-link" href="project3.html">Minutrie</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav-link" href="competences.html">Compétences</a></li>
+                <li><a class="nav-link" href="realisations.html">Réalisations et récompenses</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <div class="text-center text-white">
+                        <!-- Page heading-->
+                        <h1>Remi Jones</h1>
+                        <h3>Portfolio professionnel</h3>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-4" id="header_name">
-                <div class="content" >
-                    <!-- name -->
-                    <p id="header_name">
-                        Remi Jones
-                    </p>
-                    <p id="header_title">
-                        Portfolio de développement informatique
-                    </p>
+        </div>
+    </header>
+    <!-- Icons Grid-->
+    <section class="features-icons bg-light text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="mx-auto mb-5 mb-lg-0 mb-lg-3">
+                        <h3>Performance Exceptionnelle</h3>
+                        <p class="lead mb-0">"Rémi a brillé par sa performance exceptionnelle, une véritable étoile chez
+                            nous"<br>
+                            <em>Émile Durand, CEO, NovaTech Solutions</em>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto mb-5 mb-lg-0 mb-lg-3">
+                        <h3>Leadership</h3>
+                        <p class="lead mb-0">"Rémi a su mener son équipe avec brio, un leader né."<br>
+                            <em>Sophie Bernard, Directrice, Créatif Design</em>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto mb-0 mb-lg-3">
+                        <h3>Intégrité et Passion</h3>
+                        <p class="lead mb-0">"Intégrité et passion, Rémi a incarné nos valeurs au quotidien."<br>
+                            <em>Julien Moreau, Directeur RH, Éco Énergies</em>
+                        </p>
+                    </div>
                 </div>
             </div>
-            <!-- contact info -->
-            <div class="col-sm-4">
-                <div class="content">
-                    <address>
-                        Pour contacter : <br>
-                        (link to formulaire)
-                    </address>
+        </div>
+    </section>
+    
+    <!-- Call to Action-->
+    <section class="call-to-action text-white text-center" id="signup">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <h2 class="mb-4">Ready to get started? Sign up now!</h2>
+                    <!-- Signup form-->
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- * * SB Forms Contact Form * *-->
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- This form is pre-integrated with SB Forms.-->
+                    <!-- To make this form functional, sign up at-->
+                    <!-- https://startbootstrap.com/solution/contact-forms-->
+                    <!-- to get an API token!-->
+                    <form class="form-subscribe" id="contactFormFooter" data-sb-form-api-token="API_TOKEN">
+                        <!-- Email address input-->
+                        <div class="row">
+                            <div class="col">
+                                <input class="form-control form-control-lg" id="emailAddressBelow" type="email"
+                                    placeholder="Email Address" data-sb-validations="required,email" />
+                                <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:required">
+                                    Email Address is required.</div>
+                                <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:email">
+                                    Email Address Email is not valid.</div>
+                            </div>
+                            <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton"
+                                    type="submit">Submit</button></div>
+                        </div>
+                        <!-- Submit success message-->
+                        <!---->
+                        <!-- This is what your users will see when the form-->
+                        <!-- has successfully submitted-->
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder">Form submission successful!</div>
+                                <p>To activate this form, sign up at</p>
+                                <a class="text-white"
+                                    href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                            </div>
+                        </div>
+                        <!-- Submit error message-->
+                        <!---->
+                        <!-- This is what your users will see when there is-->
+                        <!-- an error submitting the form-->
+                        <div class="d-none" id="submitErrorMessage">
+                            <div class="text-center text-danger mb-3">Error sending message!</div>
+                        </div>
+                    </form>
                 </div>
             </div>
-
-            <!-- social media links  -->
-            <!-- telechargement cv -->
-
-            <!-- </header> -->
-        </header>
-
-        <!-- hamburger menu -->
-        <nav class="nav">
-            <a class="nav-link active" href="index.html">Accueil</a>
-            <a class="nav-link" href="projects.html">Projets</a>
-            <a class="nav-link" href="competences.html">Compétences</a>
-            <a class="nav-link" href="realisations.html">Réalisations et récompenses</a>
-          </nav>
-
-        <main>
-            <section>
-
-            </section>
-            <aside>
-
-            </aside>
-        </main>
-        <footer>
-
-        </footer>
-    </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item"><a href="#!">About</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="#!">Contact</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="#!">Terms of Use</a></li>
+                        <li class="list-inline-item">⋅</li>
+                        <li class="list-inline-item"><a href="#!">Privacy Policy</a></li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2023. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item me-4">
+                            <a href="#!"><i class="bi-facebook fs-3"></i></a>
+                        </li>
+                        <li class="list-inline-item me-4">
+                            <a href="#!"><i class="bi-twitter fs-3"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#!"><i class="bi-instagram fs-3"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 
 </html>
