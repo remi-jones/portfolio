@@ -14,150 +14,114 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet" />
     <link href="portfolio.css" rel="stylesheet" />
 </head>
 
-<body>
-    <!-- Navigation-->
-    <nav class="navbar navbar-light bg-light static-top">
-        <div class="container">
-            <ul>
-                <li class="nav-link"><a href="index.html">Accueil</a></li>
-                <li class="nav-link active"><a href="#">Projets</a>
-                    <ul>
-                        <li class="nav-link"><a href="project1.html">Visualiseur d'algorithme</a></li>
-                        <li class="nav-link"><a href="project2.html">Connect4</a></li>
-                        <li class="nav-link active"><a href="#">Minutrie</a></li>
-                    </ul>
-                </li>
-                <li class="nav-link"><a href="competences.html">Compétences</a></li>
-                <li class="nav-link"><a href="realisations.html">Réalisations et récompenses</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!-- Masthead-->
-    <header class="masthead">
-        <div class="container position-relative">
-            <div class="row align-items-center">
-                <div class="col-lg-4 object-center">
-                    <img class="mx-auto d-block img-fluid self_portrait" src="media/img/me.jfif" alt="">
-                </div>
-                <div class="col-lg-4 text-center text-white">
+<body class="project_body">
+    <div class="project_container">
+        <!-- Navigation-->
+        <nav class="navbar navbar-light bg-light static-top">
+            <div class="container">
+                <ul>
+                    <li class="nav-link"><a href="index.html">Accueil</a></li>
+                    <li class="nav-link active"><a href="#">Projet : Minuterie</a>
+                        <ul>
+                            <li class="nav-link"><a href="project1.html">Visualiseur d'algorithme</a></li>
+                            <li class="nav-link active"><a href="project2.html">Connect4</a></li>
+                            <li class="nav-link"><a href="project3.html">Minuterie</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-link"><a href="competences.html">Compétences</a></li>
+                    <li class="nav-link"><a href="realisations.html">Réalisations et récompenses</a></li>
+                </ul>
+            </div>
+        </nav>
+        <header class="header_project">
+            <div class="container position-relative">
+                <div class="row align-items-center">
+                    <div class="col-lg-12 text-center">
                         <!-- Page heading-->
-                        <h1>Remi Jones</h1>
-                        <h3>Portfolio professionnel</h3>
-                </div>
-                <div class="col-lg-4 text-white text-center">
-                    <p>
-                        <em>
-                            "Codez l'avenir avec créativité et passion."
-                        </em>
-                    </p>
+                        <h1>Connect4</h1>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <div class="container">
-        <div class="jumbotron">
-            <h1 class="display-4">Profil</h1>
-            <p class="lead">Étudiant de 4e année en informatique appliquée à l'Université de Moncton, je possède une solide expérience dans l'analyse et la modélisation de données.</p>
-            <hr class="my-4">
-            <p>Ma formation en régime coopératif m'a permis de développer une approche systématique et disciplinée du développement de logiciels, ancrée dans les méthodologies Agile. Adaptatif et débrouillard, je suis prêt à relever de nouveaux défis et à contribuer avec dynamisme à la réussite de votre entreprise.</p>
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#contacter" role="button">Me contacter</a>
-            </p>
-        </div>
+        </header>
+        <main class="main_project py-5 bg-light">
+            <div class="container">
+                <div class="carousel_container">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="media/img/timer.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item dark-arrows">
+                                <img src="media/img/timer_excel.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item dark-arrows">
+                                <img src="media/img/timer_files.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div>
+                        <p>
+                            Ce programme de minuterie graphique a été conçu comme un outil personnel pour optimiser la
+                            gestion de mon temps consacré aux études et au travail. Avec trois boutons distincts, il
+                            permet de suivre précisément le temps passé à étudier, à travailler et à se détendre. Chaque
+                            session est enregistrée avec soin : l'heure de début, l'heure de fin et la date sont
+                            consignées dans un fichier Excel, facilitant ainsi l'analyse et la réflexion sur ma
+                            répartition du temps. Ce projet a été développé en Python en exploitant la bibliothèque
+                            PySimpleGUI, ce qui a permis de créer une interface utilisateur intuitive et facile à
+                            manipuler pour le chronométrage de mes activités quotidiennes. Que ce soit pour une séance
+                            de concentration intense ou un moment de relaxation, cette minuterie graphique est l'alliée
+                            idéale pour une meilleure organisation du temps et un suivi efficace de mes progrès
+                            personnels.
+                        </p>
+                    </div>
+                </div>
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-light text-center text-lg-start">
+            <div class="container p-4">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-center">
+                        <p class="text-muted small mb-4 mb-lg-0">Ce portfolio est une représentation de mes compétences
+                            et
+                            travaux. Merci de votre visite. <br>
+                            &copy; 2023 Rémi Jones.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
 
     </div>
-    <!-- Icons Grid-->
-    <section class="features-icons bg-light text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="mx-auto mb-5 mb-lg-0 mb-lg-3">
-                        <h3>Performance Exceptionnelle</h3>
-                        <p class="lead mb-0">"Rémi a brillé par sa performance exceptionnelle, une véritable étoile chez
-                            nous"<br>
-                            <em>Émile Durand, CEO, NovaTech Solutions</em>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="mx-auto mb-5 mb-lg-0 mb-lg-3">
-                        <h3>Leadership</h3>
-                        <p class="lead mb-0">"Rémi a su mener son équipe avec brio, un leader né."<br>
-                            <em>Sophie Bernard, Directrice, Créatif Design</em>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="mx-auto mb-0 mb-lg-3">
-                        <h3>Intégrité et Passion</h3>
-                        <p class="lead mb-0">"Intégrité et passion, Rémi a incarné nos valeurs au quotidien."<br>
-                            <em>Julien Moreau, Directeur RH, Éco Énergies</em>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Formulaire pour contacter-->
-    <section class="call-to-action text-white text-center" id="signup">
-        <div class="container">
-            <h2>Informations de contact :</h2>
-            <!-- Email Button -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
 
-        </div>
-        <div class="container position-relative">
-            <div class="row justify-content-center">
-                <div class="col-xl-6">
-                    <h2 id="contacter" class="mb-4">Prêt à m'embaucher? Veuillez me contacter!</h2>
-                    <p>
-                        <a href="mailto:erj7171@umoncton.ca" class="btn btn-primary" role="button">
-                            erj7171@umoncton.ca
-                        </a>
-                    </p>
-                    <p>
-                        <!-- LinkedIn Button -->
-                        <a href="https://www.linkedin.com/in/remi-jones-a7663b212/" role="button" target="_blank">
-                            <img class="icon" src="media/img/linkedin.png" alt="linkedin_logo">
-                        </a>
-                        <!-- GitHub Button -->
-                        <a href="https://github.com/remi-jones" role="button" target="_blank">
-                            <img class="icon" src="media/img/github.png" alt="linkedin_logo">
-                        </a>
-                    </p>
-                    <p>Alternativement, entrez votre adresse courielle avec un court message et je vous répondrai dès
-                        que possible.</p>
-                    <form action="#"></form>
-                    <div class="mb-3">
-                        <label for="emailInput" class="form-label">Adresse électronique</label>
-                        <input type="email" class="form-control" id="emailInput" placeholder="nom@example.com">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Envoyer</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Footer-->
-    <footer class="bg-light text-center text-lg-start">
-        <div class="container p-4">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-center">
-                    <p class="text-muted small mb-4 mb-lg-0">Ce portfolio est une représentation de mes compétences et
-                        travaux. Merci de votre visite. <br>
-                        &copy; 2023 Rémi Jones.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </footer>
-
-
+        </script>
 </body>
+
+</html>
 
 </html>
