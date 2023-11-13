@@ -122,6 +122,36 @@ header.header_competences {
     margin-bottom: 1rem;
 }
 
+.competences_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Modification des couleurs des progress bar */
+.progress-bar {
+    background-color: #e0e0e0;
+}
+
+.cpp-bar {
+    background-color: #b0b0b0;
+}
+
+.python-bar {
+    background-color: #c0c0c0;
+}
+
+.oracle-dba-bar {
+    background-color: #a0a0a0;
+}
+
+.plsql-bar {
+    background-color: #909090;
+}
+
+.bash-bar {
+    background-color: #808080;
+}
+
 /* Modification des couleurs des badges */
 .badge {
     font-weight: bold;
